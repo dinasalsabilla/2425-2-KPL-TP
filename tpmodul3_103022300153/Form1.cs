@@ -16,5 +16,29 @@ namespace tpmodul3_103022300153
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string namaPraktikan = textBox1.Text;
+            if (!string.IsNullOrWhiteSpace(namaPraktikan))
+            {
+                label1.Text = "Halo " + namaPraktikan;
+            }
+            else
+            {
+                label1.Text = "Silakan masukkan nama Anda!";
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }
